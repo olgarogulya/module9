@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Student {
 	
-	private int grade; // поле экземпляра класса
+	private int grade;
 	
 	public Student() {
 		//System.out.println("Constructor Fraction()");
