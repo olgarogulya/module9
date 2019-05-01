@@ -2,11 +2,11 @@ package by.epam.training.module9;
 
 public class Fraction {
 
-//состояние
-	private int numerator; // поле экземпляра класса
+
+	private int numerator; 
 	private int denominator;
 
-//поведение
+
 	public Fraction() {
 		//System.out.println("Constructor Fraction()");
 		this.numerator = 0;
@@ -59,7 +59,7 @@ public class Fraction {
 		return newFr;
 	}
 
-	public void sokr() { // сокращение дроби
+	public void sokr() { 
 		int min;
 
 		if (numerator < denominator) {
