@@ -3,11 +3,11 @@ package by.epam.training.module9;
 import java.util.Random;
 
 //9_2
-//Оценки, полученные студентами в сессию, являются атрибутами класса Student. Определить:
-//а) средний балл учебной группы (использовать класс Group);
-//б) средний балл каждого студента;
-//в) число отличников;
-//г) количество студентов, имеющих "2".
+//РћС†РµРЅРєРё, РїРѕР»СѓС‡РµРЅРЅС‹Рµ СЃС‚СѓРґРµРЅС‚Р°РјРё РІ СЃРµСЃСЃРёСЋ, СЏРІР»СЏСЋС‚СЃСЏ Р°С‚СЂРёР±СѓС‚Р°РјРё РєР»Р°СЃСЃР° Student. РћРїСЂРµРґРµР»РёС‚СЊ:
+//Р°) СЃСЂРµРґРЅРёР№ Р±Р°Р»Р» СѓС‡РµР±РЅРѕР№ РіСЂСѓРїРїС‹ (РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР»Р°СЃСЃ Group);
+//Р±) СЃСЂРµРґРЅРёР№ Р±Р°Р»Р» РєР°Р¶РґРѕРіРѕ СЃС‚СѓРґРµРЅС‚Р°;
+//РІ) С‡РёСЃР»Рѕ РѕС‚Р»РёС‡РЅРёРєРѕРІ;
+//Рі) РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СѓРґРµРЅС‚РѕРІ, РёРјРµСЋС‰РёС… "2".
 
 public class Module9_2 {
 
@@ -17,7 +17,7 @@ public class Module9_2 {
 		// mas[][] = mas.grades(mas);
 
 		Random random1 = new Random();
-		int grades = 7 + random1.nextInt(1); // генерация числа от 5 до 15
+		int grades = 7 + random1.nextInt(1); 
 		System.out.println("amount of grades " + grades);
 		int students = 7;
 		System.out.println("amount of students " + students);
@@ -38,7 +38,7 @@ public class Module9_2 {
 			}
 		}
 
-		// средний балл учебной группы
+		// srednii ball uchebnoi gruppi
 		int sumgradestotal = 0;
 		for (int j = 0; j < students; j++) {
 			for (int i = 0; i < mas.length; i++) {
@@ -53,7 +53,7 @@ public class Module9_2 {
 		double avgradetotal = (double) sumgradestotal / (double) (students + grades);
 		System.out.println("srednii ball uchebnoi gruppi " + avgradetotal);
 
-		// средний балл студента
+		// srednii ball studenta
 		int sumgradesstudent = 0;
 		for (int j = 0; j < students; j++) {
 			for (int i = 0; i < mas.length; i++) {
@@ -74,7 +74,7 @@ public class Module9_2 {
 
 		}
 
-		// средний балл студента
+		// u kakogo studenta dvoika
 		int dvoika = 0;
 		for (int j = 0; j < students; j++) {
 			for (int i = 0; i < mas.length; i++) {
